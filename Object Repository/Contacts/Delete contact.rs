@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Update contact (patch)</name>
+   <name>Delete contact</name>
    <tag></tag>
-   <elementGuidId>a0dfa191-f14b-40e8-bd70-5871b6523da8</elementGuidId>
+   <elementGuidId>af16548a-da06-4111-8d8e-bdc3e5947f18</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -24,23 +24,15 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>410bf0e7-2389-4e64-a87a-db5156cb3bf9</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM0ZDFlMDBhM2VkZjAwMTMxYzllNWMiLCJpYXQiOjE2OTA2MjAzODR9.ZNqJheMDhty_iJakzNKLASjgGqVILiySRyEgBaC6x1E</value>
-      <webElementGuid>25669dfe-c636-4a6e-a3c6-a068b2ad3b8a</webElementGuid>
+      <webElementGuid>188ed98a-8b42-4efd-8e5d-abd793015387</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PATCH</restRequestMethod>
+   <restRequestMethod>DELETE</restRequestMethod>
    <restUrl>${GlobalVariable.baseUrl}/contacts/{{contactId}}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
