@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://thinking-tester-contact-list.herokuapp.com'</initValue>
+      <name>baseUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
