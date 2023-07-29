@@ -1,41 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Add user</name>
+   <name>Update contact (patch)</name>
    <tag></tag>
-   <elementGuidId>8abc9102-40f4-4b27-b077-452b9fb9453e</elementGuidId>
+   <elementGuidId>a0dfa191-f14b-40e8-bd70-5871b6523da8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>0</connectionTimeout>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstName\&quot;: \&quot;Test\&quot;,\n    \&quot;lastName\&quot;: \&quot;User\&quot;,\n    \&quot;email\&quot;: \&quot;katalontest1@tf23.com\&quot;,\n    \&quot;password\&quot;: \&quot;password\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>b69815f4-69a2-43ac-b7ce-7ed7b95c506f</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <katalonVersion>8.6.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/users</restUrl>
+   <restRequestMethod>PATCH</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/contacts/{{contactId}}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

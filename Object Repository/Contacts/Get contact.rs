@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Add user</name>
+   <name>Get contact</name>
    <tag></tag>
-   <elementGuidId>8abc9102-40f4-4b27-b077-452b9fb9453e</elementGuidId>
+   <elementGuidId>50c1a9e1-078f-40d0-bfd1-585d79219033</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>false</autoUpdateContent>
+   <authorizationRequest>
+      <authorizationInfo>
+         <entry>
+            <key>bearerToken</key>
+            <value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM0ZDFlMDBhM2VkZjAwMTMxYzllNWMiLCJpYXQiOjE2OTA2MjAzODR9.ZNqJheMDhty_iJakzNKLASjgGqVILiySRyEgBaC6x1E</value>
+         </entry>
+      </authorizationInfo>
+      <authorizationType>Bearer</authorizationType>
+   </authorizationRequest>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;firstName\&quot;: \&quot;Test\&quot;,\n    \&quot;lastName\&quot;: \&quot;User\&quot;,\n    \&quot;email\&quot;: \&quot;katalontest1@tf23.com\&quot;,\n    \&quot;password\&quot;: \&quot;password\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>b69815f4-69a2-43ac-b7ce-7ed7b95c506f</webElementGuid>
+      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM0ZDFlMDBhM2VkZjAwMTMxYzllNWMiLCJpYXQiOjE2OTA2MjAzODR9.ZNqJheMDhty_iJakzNKLASjgGqVILiySRyEgBaC6x1E</value>
+      <webElementGuid>69b855d9-d4aa-4b67-bb02-e480be45d84a</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/users</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${GlobalVariable.baseUrl}/contacts/{{contactId}}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
