@@ -10,7 +10,7 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM0Y2Q1NjkyZWViMjAwMTM1ZTVjOTMiLCJpYXQiOjE2OTA2MTkyMjJ9.fOmkejnPdb-U_zlFOy4-rETYeDng5M2fgmevheKnqpc</value>
+            <value>${token}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -26,8 +26,8 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM0Y2Q1NjkyZWViMjAwMTM1ZTVjOTMiLCJpYXQiOjE2OTA2MTkyMjJ9.fOmkejnPdb-U_zlFOy4-rETYeDng5M2fgmevheKnqpc</value>
-      <webElementGuid>51c61e99-d14e-431d-bc80-7304f7011684</webElementGuid>
+      <value>Bearer ${token}</value>
+      <webElementGuid>306ce7aa-1c6b-4c6b-b6a2-a75454b8853c</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
@@ -43,7 +43,7 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>''</defaultValue>
+      <defaultValue>GlobalVariable.token</defaultValue>
       <description></description>
       <id>9a1eebc0-c100-4288-a10f-c918a544eb5c</id>
       <masked>false</masked>
