@@ -10,7 +10,7 @@
       <authorizationInfo>
          <entry>
             <key>bearerToken</key>
-            <value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM0Y2M2ZjBhM2VkZjAwMTMxYzllNTgiLCJpYXQiOjE2OTA2MTg5OTF9.mHQxMP1kGSxr1mjlsJGVw9wlcc-wvN2W91-Do7vZo7I</value>
+            <value>${token}</value>
          </entry>
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
@@ -26,8 +26,8 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM0Y2M2ZjBhM2VkZjAwMTMxYzllNTgiLCJpYXQiOjE2OTA2MTg5OTF9.mHQxMP1kGSxr1mjlsJGVw9wlcc-wvN2W91-Do7vZo7I</value>
-      <webElementGuid>c664e406-3ef0-41b5-9658-b4db433bcd9a</webElementGuid>
+      <value>Bearer ${token}</value>
+      <webElementGuid>21364ac5-2779-4fa3-b1e7-27c36fe12826</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
@@ -42,6 +42,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.token</defaultValue>
+      <description></description>
+      <id>1ee5df1b-d121-4ed8-b63b-056ecd62bb39</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

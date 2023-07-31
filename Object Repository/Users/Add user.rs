@@ -38,14 +38,14 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'sgd@sd.com'</defaultValue>
+      <defaultValue>'hahacoba@coba.com'</defaultValue>
       <description></description>
       <id>f42d7ce8-c5b6-45a0-8cd8-5dc723f5c684</id>
       <masked>false</masked>
       <name>email</name>
    </variables>
    <variables>
-      <defaultValue>'sdg322gdsg'</defaultValue>
+      <defaultValue>'pass1234'</defaultValue>
       <description></description>
       <id>4878ca2c-b2fe-47b6-bc4f-8ee8ef2e5044</id>
       <masked>false</masked>
@@ -64,8 +64,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-
 
 WS.verifyResponseStatusCode(response, 201)
 
