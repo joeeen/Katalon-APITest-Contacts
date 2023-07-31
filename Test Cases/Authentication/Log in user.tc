@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>155bcb8c-17f1-4104-91fc-ec386e7de897</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b45d9a08-3c49-40c0-bf75-88435b9e98db</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>030ba1f8-96f6-467e-a376-f1bd76c784e9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'katalon@testing.co.id'</defaultValue>
+      <description></description>
+      <id>b45d9a08-3c49-40c0-bf75-88435b9e98db</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'myPassword'</defaultValue>
+      <description></description>
+      <id>030ba1f8-96f6-467e-a376-f1bd76c784e9</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
 </TestCaseEntity>

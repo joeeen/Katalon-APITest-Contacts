@@ -17,7 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'helper.auth.register'()
+result = WS.sendRequestAndVerify(findTestObject('Users/Log in user', [('email') : email, ('password') : password ]))
 
-body = WS.sendRequestAndVerify(findTestObject('Users/Log in user', [('email') : GlobalVariable.email, ('password') : GlobalVariable.password]))
+def slurper = new groovy.json.JsonSlurper()
+
+def response = slurper.parseText(result.getResponseBodyContent())
+
+GlobalVariable.token = response.token
 

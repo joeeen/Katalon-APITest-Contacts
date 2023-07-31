@@ -38,14 +38,14 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'nangis@huhu.com'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>66155678-cda3-41cd-97a6-d75798eb5e3b</id>
       <masked>false</masked>
       <name>email</name>
    </variables>
    <variables>
-      <defaultValue>'myPassword'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>22eae788-e79e-4fbb-87f1-8e59c0b3c1a9</id>
       <masked>false</masked>
