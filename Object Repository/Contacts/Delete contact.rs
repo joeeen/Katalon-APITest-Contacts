@@ -33,7 +33,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/contacts/{{contactId}}</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/contacts/${contactId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -48,6 +48,13 @@
       <id>1193fae1-57e9-41f5-9b75-9bc3ab789319</id>
       <masked>false</masked>
       <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.contactId</defaultValue>
+      <description></description>
+      <id>465a01d6-f261-4572-bea8-24f35a0b9354</id>
+      <masked>false</masked>
+      <name>contactId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

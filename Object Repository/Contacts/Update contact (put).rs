@@ -45,7 +45,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${GlobalVariable.baseUrl}/contacts/{{contactId}}</restUrl>
+   <restUrl>${GlobalVariable.baseUrl}/contacts/${contactId}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -60,6 +60,13 @@
       <id>62e6ab9d-4b97-4fd6-b7aa-010e40b8b7e5</id>
       <masked>false</masked>
       <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.contactId</defaultValue>
+      <description></description>
+      <id>3351236f-1784-4871-b872-455db59c98f2</id>
+      <masked>false</masked>
+      <name>contactId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

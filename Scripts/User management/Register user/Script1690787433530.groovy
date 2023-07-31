@@ -16,11 +16,10 @@ def response = slurper.parseText(body.getResponseBodyContent())
 
 HttpTextBodyContent request = body.getBodyContent()
 
-def token = response.token
-
-GlobalVariable.token = token
-
-println(response)
+GlobalVariable.token = response.token
 
 println(request.getText())
+println(response)
+
+
 
