@@ -15,7 +15,7 @@
       <guid>ae2ec03b-2588-4eff-9139-c7fe50d1750b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Authentication/Log in user</testCaseId>
+      <testCaseId>Test Cases/Authorization/Log in user</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -34,7 +34,7 @@
       <guid>229ab248-9b6d-415b-ac5d-704b01d8ca3e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Authentication/Log out user</testCaseId>
+      <testCaseId>Test Cases/Authorization/Log out user</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

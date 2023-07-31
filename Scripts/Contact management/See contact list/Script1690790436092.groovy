@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Authentication/Log in user'), [('email') : 'katalon@testing.co.id', ('password') : 'myPassword'], 
+WebUI.callTestCase(findTestCase('Authorization/Log in user'), [('email') : 'katalon@testing.co.id', ('password') : 'myPassword'], 
     FailureHandling.STOP_ON_FAILURE)
 
 body = WS.sendRequestAndVerify(findTestObject('Contacts/Get contact list', [('token') : GlobalVariable.token]))

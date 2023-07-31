@@ -16,7 +16,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-WebUI.callTestCase(findTestCase('Authentication/Log in user'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Authorization/Log in user'), [:], FailureHandling.STOP_ON_FAILURE)
 
 body = WS.sendRequestAndVerify(findTestObject('Contacts/Add contact', [('token') : GlobalVariable.token]))
 
